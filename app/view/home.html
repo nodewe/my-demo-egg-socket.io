@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en">  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,8 +62,8 @@
     // 不重要的代码，仅展示使用 - end
 
     window.onload = function () {
-      // init
-      const socket = io('/', {
+      // init   这里对应后端的 of("/test")
+      const socket = io('/test', {
 
         // 实际使用中可以在这里传递参数
         query: {

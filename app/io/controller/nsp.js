@@ -3,6 +3,7 @@
 const Controller = require('egg').Controller;
 
 class NspController extends Controller {
+  //这里是最终处理的函数
   async exchange() {
     const { ctx, app } = this;
     const nsp = app.io.of('/');

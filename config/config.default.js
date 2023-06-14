@@ -25,18 +25,20 @@ module.exports = appInfo => {
     },
   };
 
+  //设置 
   config.io = {
     init: {
       wsEngine: 'ws',
     }, // passed to engine.io
     namespace: {
       '/': {
+        //设置中间件
         connectionMiddleware: [
           'auth',
         ],
         packetMiddleware: [],
       },
-      '/example': {
+      '/test': {
         connectionMiddleware: [],
         packetMiddleware: [],
       },
