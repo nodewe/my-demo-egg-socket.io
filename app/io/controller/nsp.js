@@ -6,7 +6,8 @@ class NspController extends Controller {
   //这里是最终处理的函数
   async exchange() {
     const { ctx, app } = this;
-    const nsp = app.io.of('/');
+    // 这里拿到 对应的 命名空间
+    const nsp = app.io.of('/test');
     const message = ctx.args[0] || {};
     const socket = ctx.socket;
     const client = socket.id;
